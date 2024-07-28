@@ -21,10 +21,10 @@ ssh-copy-id -f "-o IdentityFile <PATH TO PEM FILE>" ubuntu@<INSTANCE-PUBLIC-IP>
   
 ### If not using an EC2 Instance in organization
 
-Step: 1 `sudo vim /etc/ssh/sshd_config`
-Once you enter the editor mode, find `PasswordAuthentication yes` and uncomment the quoted comment & save
-Step: 2 `sudo systemctl restart ssh`
-Execute the above command to restart the terminal
-Step: 3 `sudo passwd ubuntu`
-Terminal will prompt you to create a password after executing step 3
-Connect to your instance using your password with the `ssh ubuntu@Public IP address`
+- `sudo vim /etc/ssh/sshd_config`
+- Once you enter the editor mode, find `PasswordAuthentication yes` and uncomment the quoted comment & save
+- `sudo systemctl restart ssh`
+- Execute the above command to restart the terminal
+- `sudo passwd ubuntu`
+- Terminal will prompt you to create a password after executing step 3
+- Connect to your instance using your password with the `ssh ubuntu@Public IP address`
